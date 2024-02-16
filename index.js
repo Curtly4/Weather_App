@@ -34,31 +34,31 @@ search.addEventListener("click", () => {
       const description = document.querySelector(".weather-box .description");
       const humidity = document.querySelector(".weather-details .humidity");
       const wind = document.querySelector(".weather-details .wind span");
-      const weather = [];
 
       switch (data.weather[0].main) {
         case "Clear":
           image.src = "images/clear-sky.png";
+          document.body.style.backgroundImage = "url('clear-sky-background.jpg')";
           break;
-
         case "Clouds":
           image.src = "images/cloudy.png";
+          document.body.style.backgroundImage = "url('cloudy-background.jpg')";
           break;
-
         case "Fog":
           image.src = "images/foggy.png";
+          document.body.style.backgroundImage = "url('foggy-background.jpg')";
           break;
-
         case "Rain":
           image.src = "images/rainny.png";
+          document.body.style.backgroundImage = "url('rainy-background.jpg')";
           break;
-
         case "Snow":
           image.src = "images/snow.png";
+          document.body.style.backgroundImage = "url('snowy-background.jpg')";
           break;
-
         default:
           image.src = "";
+          document.body.style.backgroundImage = "none";
       }
 
       temperature.innerHTML = `${parseInt(data.main.temp)}&deg;F`;

@@ -10,6 +10,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: none;
     background: blueviolet;
 }
 
@@ -119,7 +120,7 @@ body {
 
 .weather-details .humidity {
     padding-left: 20px;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .weather-details .wind {
