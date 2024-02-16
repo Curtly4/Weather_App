@@ -38,27 +38,27 @@ search.addEventListener("click", () => {
       switch (data.weather[0].main) {
         case "Clear":
           image.src = "images/clear-sky.png";
-          //document.body.style.backgroundImage = "url('images/clear-sky.jpg')";
+          document.body.style.backgroundImage = "url('images/clear-sky.jpg')";
           break;
         case "Clouds":
           image.src = "images/cloudy.png";
-          //document.body.style.backgroundImage = "url('images/cloudy-sky.jpg')";
+          document.body.style.backgroundImage = "url('images/cloudy-sky.jpg')";
           break;
         case "Fog":
           image.src = "images/foggy.png";
-          //document.body.style.backgroundImage = "url('images/dense-fog.jpg')";
+          document.body.style.backgroundImage = "url('images/dense-fog.jpg')";
           break;
         case "Rain":
           image.src = "images/rainny.png";
-          //document.body.style.backgroundImage = "url('images/rainy-day.jpg')";
+          document.body.style.backgroundImage = "url('images/rainy-day.jpg')";
           break;
         case "Snow":
           image.src = "images/snow.png";
-          //document.body.style.backgroundImage = "url('images/snowday.jpg')";
+          document.body.style.backgroundImage = "url('images/snowday.jpg')";
           break;
         default:
           image.src = "";
-          //document.body.style.backgroundImage = "none";
+          document.body.style.backgroundImage = "none";
       }
 
       temperature.innerHTML = `${parseInt(data.main.temp)}&deg;F`;
